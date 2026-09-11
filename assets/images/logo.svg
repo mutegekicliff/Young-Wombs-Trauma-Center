@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-label="Young Wombs Trauma Centre Logo">
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B2B77"/>
+      <stop offset="100%" stop-color="#361D59"/>
+    </linearGradient>
+  </defs>
+  <!-- Emblem Shield / Heart Womb Concept -->
+  <g transform="translate(10, 8)">
+    <!-- Outer Shield / Womb Shape -->
+    <path d="M 32 4 C 18 4 6 16 6 32 C 6 52 32 68 32 68 C 32 68 58 52 58 32 C 58 16 46 4 32 4 Z" fill="url(#logo-grad)"/>
+    <!-- Yellow Rising Sun / Wings -->
+    <path d="M 32 16 C 24 16 18 22 18 30 C 18 40 32 50 32 50 C 32 50 46 40 46 30 C 46 22 40 16 32 16 Z" fill="#FCD41C"/>
+    <!-- Inner Nurturing Figure -->
+    <circle cx="32" cy="24" r="5" fill="#4B2B77"/>
+    <path d="M 27 34 C 27 30 37 30 37 34 C 37 42 27 42 27 34 Z" fill="#4B2B77"/>
+  </g>
+  <!-- Typography Wordmark -->
+  <text x="82" y="32" font-family="'Quicksand', sans-serif" font-weight="700" font-size="18" fill="#4B2B77" letter-spacing="0.5">YOUNG WOMBS</text>
+  <text x="82" y="48" font-family="'Quicksand', sans-serif" font-weight="600" font-size="12" fill="#000000" letter-spacing="1.5">TRAUMA CENTRE</text>
+  <!-- Motto -->
+  <rect x="82" y="54" width="95" height="16" rx="8" fill="#FCD41C"/>
+  <text x="129" y="66" font-family="'DM Sans', sans-serif" font-weight="700" font-size="9" fill="#000000" text-anchor="middle" letter-spacing="0.8">RISING STRONG</text>
+</svg>
