@@ -19,7 +19,7 @@
       <div class="top-contact-info">
         <span class="top-contact-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4B2B77" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="tel:+256777096909">+256 777 096909</a>
+          <a href="tel:+256393101052">+256 393 101052</a> &bull; <a href="tel:+254741413409">+254 741 413409</a>
         </span>
         <span class="top-contact-item">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4B2B77" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -78,7 +78,7 @@
     <section style="padding: 80px 0;">
       <div class="container">
         
-        <div class="about-grid" style="grid-template-columns: 1fr 1.15fr; gap: 52px; align-items: flex-start;">
+        <div class="donation-grid">
           
           <!-- LEFT COLUMN: MISSION & TRUST BADGES -->
           <div>
@@ -197,18 +197,14 @@
               <!-- 6. Payment Method Choice -->
               <div style="margin-bottom: 20px;">
                 <label class="form-label">Select Payment Method:</label>
-                <div class="payment-method-pills">
+                <div class="payment-method-pills" style="grid-template-columns: 1fr 1fr;">
                   <button type="button" class="pay-method-btn active" data-method="momo">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
                     <span>Mobile Money (Yo!)</span>
                   </button>
-                  <button type="button" class="pay-method-btn" data-method="card">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-                    <span>Credit Card (DPO)</span>
-                  </button>
                   <button type="button" class="pay-method-btn" data-method="wire">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                    <span>Bank Wire</span>
+                    <span>Bank Wire Transfer</span>
                   </button>
                 </div>
               </div>
@@ -219,7 +215,7 @@
               <div id="momo-fields-group" style="display: block; background: var(--surface-purple-light); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 24px; border: 1.5px solid var(--brand-purple);">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
                   <span style="font-size: 0.85rem; font-weight: 700; color: var(--brand-purple);">Yo! Payments Mobile Money Gateway</span>
-                  <span style="font-size: 0.75rem; background: var(--surface-white); padding: 2px 8px; border-radius: 10px; font-weight: 700; border: 1px solid var(--border-color);">Bank of Uganda Licensed</span>
+                  <span style="font-size: 0.75rem; background: var(--surface-white); padding: 2px 8px; border-radius: 10px; font-weight: 700; border: 1px solid var(--border-color);">Bank Licensed & Secure</span>
                 </div>
                 
                 <div class="form-group" style="margin-bottom: 12px;">
@@ -233,38 +229,21 @@
 
                 <div class="form-group" style="margin-bottom: 8px;">
                   <label for="momo-phone" class="form-label" style="font-size: 0.85rem;">Mobile Money Phone Number:</label>
-                  <input type="tel" id="momo-phone" class="form-control" placeholder="e.g. 256777000000" style="font-size: 0.95rem; font-weight: 600;">
+                  <input type="tel" id="momo-phone" class="form-control" placeholder="e.g. 0393101052 or 0741413409" style="font-size: 0.95rem; font-weight: 600;">
                 </div>
 
                 <p style="font-size: 0.8rem; line-height: 1.4; color: #000000; margin-top: 8px; background: rgba(255,255,255,0.7); padding: 8px 12px; border-radius: 6px;">
-                  <strong>Note:</strong> Upon clicking complete, Yo! Payments will send a secure USSD prompt to your phone requesting your PIN to authorize payment.
+                  <strong>Seamless Giving:</strong> Clicking complete sends an instant USSD PIN authorization prompt directly to your phone.
                 </p>
               </div>
 
-              <!-- Credit Card (DPO Integration Ready) -->
-              <div id="card-fields-group" style="display: none; background: var(--surface-yellow-light); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 24px; border: 1.5px solid var(--brand-yellow);">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                  <span style="font-size: 0.85rem; font-weight: 700; color: #000000;">DPO Payment Gateway (Integrating)</span>
-                  <span style="font-size: 0.75rem; background: var(--surface-white); padding: 2px 8px; border-radius: 10px; font-weight: 700;">DPO Group</span>
-                </div>
-
-                <div class="form-group">
-                  <input type="text" id="card-number-input" class="form-control" placeholder="Card Number (•••• •••• •••• ••••)">
-                </div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;" class="form-group">
-                  <input type="text" id="card-expiry-input" class="form-control" placeholder="MM / YY">
-                  <input type="text" id="card-cvc-input" class="form-control" placeholder="CVC / CVV">
-                </div>
-                <p style="font-size: 0.8rem; color: #000000; background: rgba(255,255,255,0.8); padding: 6px 10px; border-radius: 6px;">
-                  Card payments are being integrated via DPO Group. For instant live payments, please use Mobile Money (Yo!).
-                </p>
-              </div>
-
-              <div id="wire-fields-group" style="display: none; background: var(--surface-purple-light); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 24px; border: 1.5px solid var(--brand-purple);">
-                <p style="font-size: 0.9rem; margin-bottom: 8px; color: #000000;"><strong>Direct Bank Wire Transfer Details:</strong></p>
-                <p style="font-size: 0.85rem; color: #000000;"><strong>Bank Name:</strong> Stanbic Bank Uganda</p>
-                <p style="font-size: 0.85rem; color: #000000;"><strong>Account Name:</strong> Young Wombs Trauma Centre</p>
-                <p style="font-size: 0.85rem; color: #000000;"><strong>SWIFT / BIC:</strong> SBICUGKX</p>
+              <div id="wire-fields-group" style="display: none; background: var(--surface-purple-light); padding: 22px; border-radius: var(--radius-sm); margin-bottom: 24px; border: 1.5px solid var(--brand-purple);">
+                <p style="font-size: 0.95rem; margin-bottom: 10px; color: #000000;"><strong>Direct Bank Wire Transfer Details:</strong></p>
+                <p style="font-size: 0.88rem; margin-bottom: 6px; color: #000000;"><strong>Account Name:</strong> Youngwombs Trauma Centre Ltd</p>
+                <p style="font-size: 0.88rem; margin-bottom: 6px; color: #000000;"><strong>Bank:</strong> I&amp;M Bank</p>
+                <p style="font-size: 0.88rem; margin-bottom: 6px; color: #000000;"><strong>Branch:</strong> Kingdom Kampala</p>
+                <p style="font-size: 0.88rem; margin-bottom: 6px; color: #000000;"><strong>UGX Account No:</strong> <code style="font-weight:700;">50710929001</code></p>
+                <p style="font-size: 0.88rem; margin-bottom: 6px; color: #000000;"><strong>USD Account No:</strong> <code style="font-weight:700;">50710929002</code></p>
               </div>
 
               <!-- 7. Donor Contact Information -->
@@ -315,14 +294,14 @@
         </div>
 
         <!-- TRANSPARENT FUND ALLOCATION & FINANCIAL TRUST -->
-        <div style="margin-top: 90px; background: var(--surface-purple-light); padding: 56px; border-radius: var(--radius-lg); border: 1.5px solid var(--border-color);">
+        <div class="stewardship-box-container">
           <div style="text-align: center; max-width: 720px; margin: 0 auto 40px auto;">
             <span class="section-subtitle">Financial Stewardship</span>
             <h2 style="color: #000000;">How Your Donation Is Used</h2>
             <p style="margin-top: 12px; color: #000000;">We maintain complete transparency in funding distribution to maximize direct community benefit.</p>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
+          <div class="stewardship-card-grid">
             <div style="background: #ffffff; padding: 28px; border-radius: var(--radius-md); border-top: 4px solid var(--brand-purple); box-shadow: var(--shadow-sm);">
               <span style="font-size: 2.2rem; font-weight: 700; color: var(--brand-purple); display: block; margin-bottom: 8px;">85%</span>
               <h4 style="font-size: 1.15rem; margin-bottom: 8px; color: #000000;">Direct Field Programs</h4>
@@ -388,7 +367,7 @@
                 <svg class="faq-icon-toggle" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
               <div class="faq-answer">
-                <p style="color: #000000;">Yes! For East Africa Mobile Money payments, you can transfer to +256 777 096909. For direct international bank wire details or institutional support, select the "Bank Wire" tab in the payment options or contact info@youngwombs.org.</p>
+                <p style="color: #000000;">Yes! For East Africa Mobile Money payments, you can transfer to +256 393 101052 (Uganda) or +254 741 413409 (Kenya). For bank transfers, use our I&amp;M Bank Uganda details (UGX A/C: 50710929001, USD A/C: 50710929002, Kingdom Kampala Branch) or contact info@youngwombs.org.</p>
               </div>
             </div>
 
@@ -432,9 +411,9 @@
         </div>
         <div>
           <h3 class="footer-col-title">Contact Us</h3>
-          <p style="font-size:0.95rem; margin-bottom:12px;"><strong>Addresses:</strong> Wakiso, Uganda &bull; Kericho, Kenya</p>
+          <p style="font-size:0.95rem; margin-bottom:12px;"><strong>Addresses:</strong> Sosiot Centre-YWTC building, P.O. BOX 186-20205 Sosiot, Kenya &bull; Kitende, Wakiso, Uganda</p>
           <p style="font-size:0.95rem; margin-bottom:12px;"><strong>Email:</strong> <a href="mailto:info@youngwombs.org">info@youngwombs.org</a></p>
-          <p style="font-size:0.95rem; margin-bottom:12px;"><strong>Phone:</strong> <a href="tel:+256777096909">+256 777 096909</a></p>
+          <p style="font-size:0.95rem; margin-bottom:12px;"><strong>Phone:</strong> <a href="tel:+256393101052">+256 393 101052 (UG)</a> &bull; <a href="tel:+254741413409">+254 741 413409 (KE)</a></p>
         </div>
       </div>
     </div>

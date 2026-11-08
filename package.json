@@ -1,0 +1,19 @@
+{
+  "name": "young-wombs-trauma-center",
+  "version": "1.0.0",
+  "description": "Young Wombs Trauma Centre Website and Yo! Payments Mobile Money API Integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "young-wombs",
+    "yo-payments",
+    "mobile-money",
+    "uganda",
+    "kenya"
+  ],
+  "author": "Young Wombs Trauma Centre",
+  "license": "ISC"
+}
